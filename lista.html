@@ -4,29 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elderly To-do-list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
- <link rel="stylesheet" href="lista.css">
- <header>
-        <h1>Omat tehtävät</h1>
-        <p>Täältä löydät kaikki tehtäväsi.</p>
+
+    <header>
+        <h1>Oma tehtävälista</h1>
     </header>
 
     <main>
 
-        <section class="task-section">
+        <section class="welcome-section">
+            <h2>Mitä haluat tehdä?</h2>
 
-            <h2>Tehtävälista</h2>
+            <p>
+                Täällä voit hallita tehtäviäsi,
+                lisätä uusia tehtäviä ja tarkastella
+                aikaisempia tehtäviäsi.
+            </p>
+        </section>
 
-            <div id="task-list">
 
-                <!-- Tehtäväryhmät ja tehtävät lisätään JavaScriptillä -->
+        <section class="navigation-section">
+
+            <div class="navigation-container">
+
+                <a href="lista.html" class="navigation-card">
+                    <span class="icon">📋</span>
+                    <h3>Omat tehtävät</h3>
+                    <p>Katso ja hallitse tehtäviäsi.</p>
+                </a>
+
+
+                <a href="lista.html" class="navigation-card">
+                    <span class="icon">➕</span>
+                    <h3>Lisää tehtävä</h3>
+                    <p>Lisää uusi tehtävä listallesi.</p>
+                </a>
+
+
+                <a href="historia.html" class="navigation-card">
+                    <span class="icon">🕒</span>
+                    <h3>Tehtävähistoria</h3>
+                    <p>Tarkastele aikaisempia tehtäviäsi.</p>
+                </a>
 
             </div>
 
         </section>
 
     </main>
-    <script src="lista.js"></script>
+
+    <footer>
+        <p>Oma tehtävälista – Arjen helpottamiseksi</p>
+    </footer>
+
 </body>
+
 </html>
